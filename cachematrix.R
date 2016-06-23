@@ -22,7 +22,8 @@ makeCacheMatrix <- function(M = matrix()) {
 
 ## Write a short comment describing this function
 ## Here we will use the solve() to find the inverse of the matrix
-## assumed to be invertibleby default.
+## assumed to be invertibleby default. If its present in the cache it will return the inverse of the cache else it will calculate 
+## and then return the inverse using solve().
 
 cacheSolve <- function(M, ...) {
         ## Return a matrix that is the inverse of 'M'
